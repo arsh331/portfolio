@@ -184,7 +184,6 @@ li a:hover{
 
 #contacts a{
     text-decoration: none;
-    color: dodgerblue;
 }
 
 #links{
@@ -194,15 +193,15 @@ li a:hover{
     height: auto;
 }
 
-#linkedin, #github{
+#linkedin, #github,#email{
     color: white;
-    padding: 0 20px;
+    padding: 15px 20px;
     font-size: 25px;
     transition: font-size 0.5s;
 
 }
 
-#linkedin:hover, #github:hover{
+#linkedin:hover, #github:hover,#email:hover{
     color: dodgerblue;
     font-size: 40px;
     transition: font-size 0.5s;
