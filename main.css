@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    color:white;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+
+}
+
+#header h1{
+    position: absolute;
+    text-align: center;
+    font-size: 4vmax;
+    letter-spacing: 3px;
+    bottom:25%;
+    left:10%;
+    text-align: left;
+}
+
+#title{
+    font-size: 3vmax;
+}
+#header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+    filter: brightness(35%);
+}
+
+nav{
+    background-color: #090909;
+    order: -1;
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+li{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+li a{
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+}
+
+li a:hover{
+    background-color: dodgerblue;
+    color: black;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    height: 100vh;
+}
+
+#about h2{
+    padding-bottom: 4%;
+    margin: 0;
+    color: dodgerblue;
+    font-size: 3vmax;
+    display: inline;
+}
+
+#about h2:hover{
+    color:white;
+}
+#about p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vmax;
+    line-height: 3vmax;
+}
+#image{
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#skills{
+    color: dodgerblue;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#skills:hover{
+    color:white;
+}
+
+#portfolio{
+    height:100vh;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    background-color: rgb(28, 28, 28);
+}
+
+#portfolio h2{
+    font-size: 3vmax;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: dodgerblue;
+}
+
+.projects{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: white;
+}
+
+
+
+#spacestagram img, #caseConverter img{
+    width: 35vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 0;
+    transition: width 0.5s;
+}
+
+#spacestagram img:hover, #caseConverter img:hover{
+    filter: brightness(50%);
+    width: 45vw;
+    transition: width 0.5s;
+}
+
+#spacestagram:hover, #caseConverter:hover{
+    color: dodgerblue;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+}
+
+#spacestagram, #caseConverter{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    height: 75vh;
+}
+
+#contacts{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 3% 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contacts h1{
+    padding-top: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#contacts a{
+    text-decoration: none;
+}
+
+#links{
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#linkedin, #github{
+    color: white;
+    padding: 0 20px;
+    font-size: 25px;
+    transition: font-size 0.5s;
+
+}
+
+#linkedin:hover, #github:hover{
+    color: dodgerblue;
+    font-size: 40px;
+    transition: font-size 0.5s;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#footer p{
+    margin: 0;
+    color: dodgerblue;
+}
+
+#name{
+    color:white;
+
+}
