@@ -178,6 +178,7 @@ li a:hover{
 
 #contacts h1{
     padding-top: 0;
+    padding-bottom: 15px;
     margin: 0;
     font-family: 'Bebas Neue', cursive;
     color: dodgerblue;
@@ -196,7 +197,7 @@ li a:hover{
 
 #linkedin, #github,#email{
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-size: 25px;
     transition: font-size 0.5s;
 
