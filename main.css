@@ -28,6 +28,7 @@ html, body{
 #title{
     font-size: 3vmax;
 }
+
 #header-image::before{
     content: "";
     background-image: url("images/bg.jpg");
@@ -38,8 +39,6 @@ html, body{
     height: 100%;
     opacity: 0.95;
     filter: brightness(35%);
-
-
 }
 
 nav{
