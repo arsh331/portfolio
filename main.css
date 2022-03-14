@@ -126,6 +126,10 @@ li a:hover{
     background-color: rgb(28, 28, 28);
 }
 
+#suggestion{
+    color:white;
+    font-size: 1.5vmax;
+}
 #portfolio h2{
     font-size: 3vmax;
     height: 25vh;
@@ -240,5 +244,31 @@ li a:hover{
     .projects{
         flex-flow: column;
         min-height: 0;
+    }
+
+    #image{
+        width: 45vw;
+        height: 45vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    #spacestagram img, #caseConverter img{
+        width: 50vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5%;
+        padding: 0;
+        transition: width 0.5s;
+    }
+
+    #about{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #spacestagram img:hover, #caseConverter img:hover{
+    }
+
+    #spacestagram:hover, #caseConverter:hover{
     }
 }
