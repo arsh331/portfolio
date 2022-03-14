@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
 html, body{
     margin: 0;
     padding: 0;
@@ -53,13 +54,14 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-
 }
+
 li{
     float: left;
     width: 25%;
     position: relative;
 }
+
 li a{
     display: block;
     text-align: center;
@@ -135,7 +137,6 @@ li a:hover{
 
 .projects{
     display: flex;
-    flex-flow: row;
     align-items: center;
     color: white;
 }
@@ -229,4 +230,15 @@ li a:hover{
 #name{
     color:white;
 
+}
+
+@media screen and (max-width: 900px){
+    #about{
+        flex-flow: column-reverse;
+    }
+
+    .projects{
+        flex-flow: column;
+        min-height: 0;
+    }
 }
