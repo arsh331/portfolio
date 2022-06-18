@@ -236,6 +236,16 @@ li a:hover{
 
 }
 
+.hamburger{
+    display: none;
+    overflow: hidden;
+    padding: 1% 0%;
+}
+
+
+.mobile{
+    display: none;
+}
 @media screen and (max-width: 900px){
     #about{
         flex-flow: column-reverse;
@@ -271,4 +281,26 @@ li a:hover{
 
     #spacestagram:hover, #caseConverter:hover{
     }
+
+    .desktop{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hamburger i{
+        cursor: pointer;
+    }
+    .mobile{
+        flex-flow: column;
+    }
+
+    .mobile li{
+        width: 100%;
+    }
+
+
 }
