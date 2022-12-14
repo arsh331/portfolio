@@ -235,18 +235,19 @@ li a:hover{
     color:white;
 
 }
-
-.hamburger{
-    display: none;
-    overflow: hidden;
-    padding: 1% 0%;
+@media screen and (min-width: 900px) {
+    .hamburger {
+        display: none;
+        overflow: hidden;
+        padding: 1% 0%;
+    }
 }
 
 
 .mobile{
     display: none;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 899px){
     #about{
         flex-flow: column-reverse;
     }
@@ -301,6 +302,4 @@ li a:hover{
     .mobile li{
         width: 100%;
     }
-
-
 }
