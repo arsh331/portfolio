@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+:root {
+    --blue: #00A3E8;
+    --grey: #1c1c1c;
+    --white: rgb(255, 255, 255, 0.87);
+    --main-font: 'Bebas Neue', cursive;
+    --sec-font: 'Montserrat', sans-serif;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    color:var(--white);
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+}
+
+#header h1{
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    bottom:35%;
+    left:10%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+#title{
+    padding: 0;
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: var(--sec-font);
+    letter-spacing: normal;
+}
+
+#header-image::before{
+    content: "";
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.95;
+    filter: brightness(30%);
+}
+
+nav{
+    background-color: #2c2929ee;
+    order: -1;
+    position: fixed;
+    width: 80%;
+    padding: 0 10%;
+    opacity: 1;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+li a{
+    font-size: 1.5em;
+    display: block;
+    text-align: left;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+li a:hover{
+    background-color: var(--blue);
+    color: black;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 10%;
+    width: 80%;
+}
+
+#about h2{
+    color: var(--blue);
+    font-size: 2rem;
+    display: inline;
+}
+
+#about h2:hover{
+    color:var(--white);
+}
+#about p{
+    font-family: var(--sec-font);
+    font-size: 1.5em;
+    line-height: 2em;
+}
+#image{
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#skills{
+    color: var(--blue);
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+
+#skills:hover{
+    color:var(--white);
+}
+
+#portfolio{
+    display: flex;
+    flex-flow: column;
+    background-color: var(--grey);
+    padding: 10%;
+    width: 80%;
+}
+
+#suggestion{
+    color:var(--white);
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+#portfolio h2{
+    font-size: 2em;
+    display: flex;
+    color: var(--blue);
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+#spacestagram, #caseConverter{
+    display: flex;
+    flex-flow: column;
+    font-family: var(--sec-font);
+    padding: 10%;
+    width: 30%;
+}
+
+
+#spacestagram img, #caseConverter img{
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+
+#spacestagram img:hover, #caseConverter img:hover{
+    filter: brightness(50%);
+    transform: scale(1.3);
+    transition: 0.5s all ease;
+}
+
+#spacestagram:hover, #caseConverter:hover{
+    color: var(--blue);
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+}
+
+
+
+#contacts{
+    text-align: center;
+    background-color: black;
+    color: var(--white);
+    padding: 3% 0;
+    font-family: var(--sec-font);
+}
+
+#contacts h1{
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--blue);
+}
+
+#contacts a{
+    text-decoration: none;
+}
+
+#links{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#linkedin, #github,#email{
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 25px;
+    transition: font-size 0.5s;
+
+}
+
+#linkedin:hover, #github:hover,#email:hover{
+    color: var(--blue);
+    font-size: 40px;
+    transition: font-size 0.5s;
+}
+
+#footer{
+    background-color: black;
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#footer p{
+    margin: 0;
+    color: var(--blue);
+}
+
+#name{
+    color:var(--white);
+
+}
+@media screen and (min-width: 900px) {
+    .hamburger {
+        display: none;
+        overflow: hidden;
+        padding: 1% 0%;
+    }
+}
+
+
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 899px){
+    #about{
+        flex-flow: column-reverse;
+    }
+
+    .projects{
+        flex-flow: column;
+        min-height: 0;
+        text-align: center;
+    }
+
+    #image{
+        width: 30vw;
+        height: 30vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    #spacestagram img, #caseConverter img{
+        width: 50vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5%;
+        padding: 0;
+    }
+    
+    #spacestagram img:hover, #caseConverter img:hover{
+        text-decoration: none;
+    }
+
+    #about{
+        padding: 10%;
+    }
+
+
+    .desktop{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hamburger i{
+        cursor: pointer;
+    }
+    .mobile{
+        flex-flow: column;
+    }
+
+    .mobile li{
+        width: 100%;
+    }
+}
