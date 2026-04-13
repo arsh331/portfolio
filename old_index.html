@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link href="new.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/c73a089fd4.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <section class="min-h-screen flex items-center justify-center py-4 px-4 sm:px-8" style="background:#0f172a;">
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-4 w-full lg:w-[80%]">
+      <!-- Left: Photo card -->
+      <div class="border border-white-100 rounded-2xl p-4 sm:p-8 flex flex-col items-center justify-center gap-4">
+        <img src="images/profile.png"
+          class="w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 rounded-full object-cover border border-slate-700"
+          alt="Arshdeep Singh" />
+        <div class="flex gap-2 flex-wrap justify-center">
+          <a href="https://github.com/arsh331"
+            class="btn btn-sm sm:btn-md btn-outline border-slate-700 text-slate-400">GitHub</a>
+          <a href="https://linkedin.com/in/arsh331"
+            class="btn btn-sm sm:btn-md btn-outline border-slate-700 text-slate-400">LinkedIn</a>
+          <a href="/resume.pdf" class="btn btn-sm sm:btn-md btn-outline border-slate-700 text-slate-400">Resume</a>
+        </div>
+      </div>
+      <!-- Right: Content cards -->
+      <div class="flex flex-col gap-4">
+        <!-- Name card -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6">
+          <span class="badge badge-outline border-slate-700 text-slate-500 text-xs sm:text-sm tracking-widest mb-3">Full
+            Stack Developer</span>
+          <h1 class="font-bebas text-5xl sm:text-6xl lg:text-8xl text-slate-200 leading-none tracking-wide">
+            Arshdeep<br>Singh</span></h1>
+          <p class="text-slate-500 text-base sm:text-lg mt-2 tracking-wide">University of Manitoba Graduate
+            &middot; Google Summer of Code '23 at MetaBrainz</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Bio card -->
+          <div class="border border-slate-700 rounded-2xl p-3 sm:p-5">
+            <p class="text-slate-400 text-sm sm:text-lg leading-relaxed">I enjoy designing and building web
+              apps — from interactive data visualizations to scalable full stack systems.</p>
+          </div>
+          <!-- Location card -->
+          <div class="border border-slate-700 rounded-2xl p-3 sm:p-5 flex flex-col gap-1">
+            <span class="text-slate-600 text-xs tracking-widest uppercase">Based in</span>
+            <span class="text-slate-300 text-sm sm:text-lg">Winnipeg, MB</span>
+            <span class="text-slate-600 text-xs tracking-widest uppercase mt-2">Open to</span>
+            <span class="text-slate-300 text-sm sm:text-lg">Remote &amp; On-site</span>
+          </div>
+          <!-- CTA card -->
+          <div
+            class="border border-slate-700 rounded-2xl p-3 sm:p-5 col-span-2 flex flex-wrap items-center gap-2 sm:gap-3">
+            <a href="#projects" class="btn btn-sm sm:btn-md border-none text-slate-900" style="background:#00A3E8;">View
+              Projects</a>
+            <a href="#contact" class="btn btn-sm sm:btn-md btn-outline border-slate-700 text-slate-400">Get
+              in Touch</a>
+            <div class="ml-auto flex items-center gap-2 text-slate-500 text-xs sm:text-base">
+              <span class="w-2 h-2 rounded-full inline-block" style="background:#22c55e;"></span>
+              Available for work
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <section class="py-16 px-4 sm:px-8 flex justify-center" style="background:#0f172a;">
+    <div class="w-full lg:w-[80%]">
+      <!-- Section heading -->
+      <div class="border border-white-100 rounded-2xl p-4 sm:p-6 mb-4">
+        <span class="badge badge-outline border-slate-700 text-slate-500 text-xs sm:text-sm tracking-widest mb-3">What
+          I work with</span>
+        <h2 class="font-bebas text-5xl sm:text-6xl lg:text-8xl text-slate-200 leading-none tracking-wide">Skills
+          &amp; Stack</span></h2>
+      </div>
+      <!-- Bento grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Frontend -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <span class="text-xs tracking-widest uppercase text-slate-600">Frontend</span>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">React</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">TypeScript</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">D3.js</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Nivo</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">LESS
+              CSS</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Tailwind</span>
+          </div>
+        </div>
+        <!-- Backend -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <span class="text-xs tracking-widest uppercase text-slate-600">Backend</span>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Node.js</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Express</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Nest.js</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Flask</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Java</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Python</span>
+          </div>
+        </div>
+        <!-- Databases -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <span class="text-xs tracking-widest uppercase text-slate-600">Databases</span>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">MySQL</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">PostgreSQL</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">MongoDB</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">JDBC</span>
+          </div>
+        </div>
+        <!-- DevOps & Tools -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <span class="text-xs tracking-widest uppercase text-slate-600">DevOps &amp; Tools</span>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Docker</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">GitHub
+              Actions</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Azure</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Git</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">GitLab</span>
+          </div>
+        </div>
+        <!-- Data & ML -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <span class="text-xs tracking-widest uppercase text-slate-600">Data &amp; ML</span>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">R</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">ggplot2</span>
+            <span
+              class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">tidyverse</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">Random
+              Forest</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-sm sm:text-base p-3 sm:p-4">KNN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 sm:px-8 flex justify-center" style="background:#0f172a;">
+    <div class="w-full lg:w-[80%]">
+      <!-- Section heading -->
+      <div class="border border-white-100 rounded-2xl p-4 sm:p-6 mb-4">
+        <span class="badge badge-outline border-slate-700 text-slate-500 text-xs sm:text-sm tracking-widest mb-3">Where
+          I've worked</span>
+        <h2 class="font-bebas text-5xl sm:text-6xl lg:text-8xl text-slate-200 leading-none tracking-wide">
+          Experience</span></h2>
+      </div>
+      <div class="flex flex-col gap-4">
+        <!-- GSoC -->
+        <div
+          class="border border-slate-700 rounded-2xl p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-4 sm:gap-6">
+          <!-- Left meta -->
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="font-bebas text-3xl sm:text-4xl text-slate-200 leading-none tracking-wide">
+                MetaBrainz Foundation</span></p>
+              <p class="text-slate-500 text-sm sm:text-base mt-1">Google Summer of Code</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="badge badge-outline border-slate-600 text-slate-400 text-xs sm:text-sm p-3 w-fit">May
+                2023 — Aug 2023</span>
+              <span
+                class="badge badge-outline border-slate-600 text-slate-400 text-xs sm:text-sm p-3 w-fit">Remote</span>
+              <span class="badge text-xs sm:text-sm p-3 w-fit"
+                style="background:#00A3E8; color:#0f172a; border:none;">Internship</span>
+            </div>
+          </div>
+          <!-- Right detail -->
+          <div class="flex flex-col gap-4">
+            <p class="text-slate-300 text-sm sm:text-lg font-semibold">Frontend Developer</p>
+            <ul class="flex flex-col gap-2 text-slate-400 text-sm sm:text-base leading-relaxed">
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Built an interactive artist
+                similarity graph using React, TypeScript, Flask and Nivo.</li>
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Integrated multiple APIs to
+                gather artist-related data including similarities and Wikipedia extracts.</li>
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Collaborated with the core dev
+                team to improve UI and integrate user-friendly features.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">React</span>
+              <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">TypeScript</span>
+              <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Flask</span>
+              <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Nivo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IntouchCX -->
+        <div
+          class="border border-slate-700 rounded-2xl p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-4 sm:gap-6">
+
+          <!-- Left meta -->
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="font-bebas text-3xl sm:text-4xl text-slate-200 leading-none tracking-wide">
+                IntouchCX</span></p>
+              <p class="text-slate-500 text-sm sm:text-base mt-1">Winnipeg, MB · On-site</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="badge badge-outline border-slate-600 text-slate-400 text-xs sm:text-sm p-3 w-fit">Sep
+                2024 — Present</span>
+              <span
+                class="badge badge-outline border-slate-600 text-slate-400 text-xs sm:text-sm p-3 w-fit">Full-time</span>
+              <span class="badge badge-outline border-slate-700 text-slate-500 text-xs sm:text-sm p-3 w-fit">Top
+                Performer</span>
+            </div>
+          </div>
+
+          <!-- Right detail -->
+          <div class="flex flex-col gap-4">
+            <p class="text-slate-300 text-sm sm:text-lg font-semibold">Technical Customer Support Advisor
+            </p>
+            <ul class="flex flex-col gap-2 text-slate-400 text-sm sm:text-base leading-relaxed">
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Achieved 80%+ customer
+                satisfaction across phones, tablets, and PCs/Macs.</li>
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Resolved 85%+ of cases
+                independently, keeping escalations under 15%.</li>
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Managed 15+ cases daily while
+                maintaining data security compliance.</li>
+              <li class="flex gap-2"><span style="color:#00A3E8;">▹</span>Simplified complex technical
+                issues to enhance customer understanding and trust.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Technical
+                Support</span>
+              <span
+                class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Troubleshooting</span>
+              <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Customer
+                Service</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 sm:px-8 flex justify-center" style="background:#0f172a;">
+
+    <div class="w-full lg:w-[80%]">
+
+      <!-- Section heading -->
+      <div class="border border-white-700 rounded-2xl p-4 sm:p-6 mb-4">
+        <span class="badge badge-outline border-slate-700 text-slate-500 text-xs sm:text-sm tracking-widest mb-3">Things
+          I've built</span>
+        <h2 class="font-bebas text-5xl sm:text-6xl lg:text-8xl text-slate-200 leading-none tracking-wide">
+          Projects</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <!-- Artist Similarity Graph - Featured -->
+        <div class="border rounded-2xl p-4 sm:p-6 flex flex-col gap-4 sm:col-span-2" style="border-color:#00A3E8;">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="badge text-xs sm:text-sm p-3" style="background:#00A3E8; color:#0f172a; border:none;">Featured
+              — GSoC 2023</span>
+            <div class="flex gap-2">
+              <a href="https://github.com/metabrainz/listenbrainz-server"
+                class="btn btn-sm btn-outline border-slate-600 text-slate-400">GitHub ↗</a>
+              <a href="https://listenbrainz.org/explore/music-neighborhood/"
+                class="btn btn-sm border-none text-slate-900" style="background:#00A3E8;">Live ↗</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-4">
+            <div class="flex flex-col gap-3">
+              <p class="font-bebas text-3xl sm:text-4xl text-slate-200 leading-none tracking-wide">Artist
+                Similarity Graph</p>
+              <p class="text-slate-400 text-sm sm:text-base leading-relaxed">Interactive data
+                visualization of artist relationships built during Google Summer of Code 2023.
+                Integrates multiple music APIs to display artist similarities and Wikipedia data in a
+                dynamic, explorable graph.</p>
+            </div>
+            <div class="border border-slate-700 rounded-xl p-4 flex flex-col gap-2 justify-center">
+              <p class="text-xs tracking-widest uppercase text-slate-600">Highlights</p>
+              <p class="text-slate-400 text-sm">Multi-API integration</p>
+              <p class="text-slate-400 text-sm">Interactive graph UI</p>
+              <p class="text-slate-400 text-sm">Open source contribution</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">React</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">TypeScript</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Flask</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Nivo</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">REST
+              APIs</span>
+          </div>
+        </div>
+
+        <!-- Course Planner -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <span class="badge badge-outline border-slate-600 text-slate-500 text-xs p-3">Software
+              Engineering</span>
+            <a href="https://github.com/maingockien01/comp4350-team8"
+              class="btn btn-sm btn-outline border-slate-600 text-slate-400">GitHub ↗</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bebas text-2xl sm:text-3xl text-slate-200 leading-none tracking-wide">Course
+              Planner Website</p>
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed">Scalable student course
+              management app handling 1000 concurrent requests across 100 accounts per minute with full
+              CI/CD to Azure.</p>
+          </div>
+          <div class="border border-slate-700 rounded-xl p-3 grid grid-cols-2 gap-2">
+            <div>
+              <p class="text-xs text-slate-600 tracking-widest uppercase">Load tested</p>
+              <p class="font-bebas text-2xl sm:text-3xl" style="color:#00A3E8;">1000 req/min</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-600 tracking-widest uppercase">Accounts</p>
+              <p class="font-bebas text-2xl sm:text-3xl" style="color:#00A3E8;">100+</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">TypeScript</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">React</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Nest.js</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">MySQL</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Docker</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">GitHub
+              Actions</span>
+          </div>
+        </div>
+
+        <!-- Blockchain -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <span class="badge badge-outline border-slate-600 text-slate-500 text-xs p-3">Distributed
+              Systems</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bebas text-2xl sm:text-3xl text-slate-200 leading-none tracking-wide">Blockchain
+              Peer</p>
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed">Proof-of-work blockchain peer
+              with P2P networking, gossip protocol, and cryptographic security. Supports real-time block
+              announcements and consensus chain verification.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Python</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">P2P
+              Networking</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Cryptography</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">HTTP</span>
+          </div>
+        </div>
+
+        <!-- Spotify -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <span class="badge badge-outline border-slate-600 text-slate-500 text-xs p-3">Data
+              Analysis</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bebas text-2xl sm:text-3xl text-slate-200 leading-none tracking-wide">Spotify
+              Song Data Analysis</p>
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed">Relational database built on
+              Spotify's 150k music records dataset with a CLI for querying statistics on top albums and
+              artists.</p>
+          </div>
+          <div class="border border-slate-700 rounded-xl p-3">
+            <p class="text-xs text-slate-600 tracking-widest uppercase">Dataset size</p>
+            <p class="font-bebas text-2xl sm:text-3xl" style="color:#00A3E8;">150,000 records</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">MySQL</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">Java</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">JDBC</span>
+          </div>
+        </div>
+
+        <!-- Obesity Prediction -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <span class="badge badge-outline border-slate-600 text-slate-500 text-xs p-3">Machine
+              Learning</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bebas text-2xl sm:text-3xl text-slate-200 leading-none tracking-wide">Obesity
+              Level Prediction</p>
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed">Linear Regression, KNN, and
+              Random Forest models predicting obesity levels from dietary and physical activity data
+              across 2000+ records.</p>
+          </div>
+          <div class="border border-slate-700 rounded-xl p-3">
+            <p class="text-xs text-slate-600 tracking-widest uppercase">Records analysed</p>
+            <p class="font-bebas text-2xl sm:text-3xl" style="color:#00A3E8;">2,000+</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">R</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">ggplot2</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">tidyverse</span>
+            <span class="badge badge-outline border-slate-600 text-slate-300 text-xs sm:text-sm p-3">RStudio</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="py-16 px-4 sm:px-8 flex justify-center" style="background:#0f172a;">
+
+    <div class="w-full lg:w-[80%] flex flex-col gap-4">
+
+      <!-- Section heading -->
+      <div class="border border-white-700 rounded-2xl p-4 sm:p-6">
+        <span class="badge badge-outline border-slate-700 text-slate-500 text-xs sm:text-sm tracking-widest mb-3">Let's
+          talk</span>
+        <h2 class="font-bebas text-5xl sm:text-6xl lg:text-8xl text-slate-200 leading-none tracking-wide">Get In
+          Touch</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <!-- Left: message card -->
+        <div class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+          <p class="text-slate-400 text-sm sm:text-lg leading-relaxed">I'm currently open to new opportunities
+            — whether it's a full-time role, contract work, or an interesting project. If you have something
+            in mind, I'd love to hear about it.</p>
+          <p class="text-slate-500 text-sm sm:text-base leading-relaxed">I'll do my best to get back to you
+            within a day or two.</p>
+          <div class="flex items-center gap-2 mt-auto">
+            <span class="w-2 h-2 rounded-full inline-block" style="background:#22c55e;"></span>
+            <span class="text-slate-400 text-sm sm:text-base">Available for work</span>
+          </div>
+        </div>
+
+        <!-- Right: links -->
+        <div class="flex flex-col gap-4">
+
+          <a href="mailto:331arsh@gmail.com"
+            class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex items-center justify-between group hover:border-[#00A3E8] transition-colors duration-200">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs tracking-widest uppercase text-slate-600">Email</span>
+              <span class="text-slate-300 text-sm sm:text-lg font-bebas tracking-wide">331arsh@gmail.com</span>
+            </div>
+            <span class="text-slate-600 text-xl group-hover:text-[#00A3E8] transition-colors duration-200">↗</span>
+          </a>
+
+          <a href="https://github.com/arsh331"
+            class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex items-center justify-between group hover:border-[#00A3E8] transition-colors duration-200">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs tracking-widest uppercase text-slate-600">GitHub</span>
+              <span class="text-slate-300 text-sm sm:text-lg font-bebas tracking-wide">github.com/arsh331</span>
+            </div>
+            <span class="text-slate-600 text-xl group-hover:text-[#00A3E8] transition-colors duration-200">↗</span>
+          </a>
+
+          <a href="https://linkedin.com/in/arsh331"
+            class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex items-center justify-between group hover:border-[#00A3E8] transition-colors duration-200">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs tracking-widest uppercase text-slate-600">LinkedIn</span>
+              <span class="text-slate-300 text-sm sm:text-lg font-bebas tracking-wide">linkedin.com/in/arsh331</span>
+            </div>
+            <span class="text-slate-600 text-xl group-hover:text-[#00A3E8] transition-colors duration-200">↗</span>
+          </a>
+
+          <a href="/resume.pdf"
+            class="border border-slate-700 rounded-2xl p-4 sm:p-6 flex items-center justify-between group hover:border-[#00A3E8] transition-colors duration-200">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs tracking-widest uppercase text-slate-600">Resume</span>
+              <span class="text-slate-300 text-sm sm:text-lg font-bebas tracking-wide">Download PDF</span>
+            </div>
+            <span class="text-slate-600 text-xl group-hover:text-[#00A3E8] transition-colors duration-200">↓</span>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div
+        class="border border-slate-700 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="font-bebas text-slate-600 tracking-widest text-sm sm:text-base">Arshdeep Singh &copy; 2026</p>
+        <p class="text-slate-700 text-xs sm:text-sm tracking-wide">Built with HTML · Tailwind CSS · DaisyUI</p>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
